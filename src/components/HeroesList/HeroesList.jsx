@@ -1,7 +1,7 @@
 import s from "./HeroesList.module.css";
 
 const HeroesList = () => {
-  return <div></div>;
+  return <div className="container"></div>;
 };
 
 export default HeroesList;

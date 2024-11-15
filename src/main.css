@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Neucha&family=Unbounded:wght@200..900&display=swap");
+
+/* RESET */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base */
+
+body {
+  background-color: #24315e;
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 360px;
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-image: url("./assets//images/stars-tel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Unbounded";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 141%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f98787;
+}
+
+h2 {
+  font-family: "Unbounded";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 650%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f98787;
+}
+
+h3 {
+  font-family: "Unbounded";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 975%;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f7e9a0;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.07em;
+  color: #d9d9d9;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 325%;
+    letter-spacing: 0.04em;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 390%;
+    letter-spacing: 0.04em;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 387%;
+    letter-spacing: 0.06em;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 133px;
+  }
+
+  h1 {
+    font-size: 59px;
+    line-height: 261%;
+    letter-spacing: 0.03em;
+  }
+
+  h2 {
+    font-size: 41px;
+    line-height: 376%;
+  }
+
+  p {
+    line-height: 120%;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

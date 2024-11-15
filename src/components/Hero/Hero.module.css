@@ -1,0 +1,34 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper__slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 235px;
+}
+
+.swiper__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.h1__stars {
+  background-image: url("./../../assets/images/hero.png");
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
