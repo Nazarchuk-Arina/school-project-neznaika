@@ -13,6 +13,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
+  box-shadow: 0 5px 10px 3px #35416b;
 }
 .container .hero__main__wo_heading {
   padding: 0 0;
@@ -34,12 +35,15 @@
 .hero__main__pic_text p {
   width: 270px;
 }
+.visually__hidden {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .hero__main__wo_heading {
     border-radius: 30px;
     width: 708px;
-    box-shadow: 0 5px 30px 3px #232f58;
+    box-shadow: 0 5px 30px 3px #35416b;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -73,7 +77,6 @@
   .hero__main__wo_heading {
     padding: 28px;
     width: 1016px;
-    box-shadow: 0 5px 30px 3px #232f58;
   }
   .hero__main__pic_text img {
     width: 263px;
