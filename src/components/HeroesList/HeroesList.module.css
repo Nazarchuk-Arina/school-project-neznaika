@@ -1,0 +1,24 @@
+.heroes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.heroes_list__inner h1 {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .heroes__list {
+    gap: 50px;
+  }
+  .heroes_list__inner h1 {
+    margin-bottom: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .heroes__list {
+    gap: 80px;
+  }
+  .heroes_list__inner h1 {
+    margin-bottom: 83px;
+  }
+}

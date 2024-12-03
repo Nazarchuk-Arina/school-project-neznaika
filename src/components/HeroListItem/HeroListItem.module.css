@@ -35,17 +35,6 @@
   width: 270px;
 }
 
-.link {
-  text-align: center;
-}
-
-.link:focus,
-.link:hover {
-  color: #f7e9a0;
-}
-.visually__hidden {
-  display: none;
-}
 @media screen and (min-width: 768px) {
   .hero__main__wo_heading {
     border-radius: 30px;
@@ -60,10 +49,6 @@
   }
   .hero__main__pic_text p {
     width: 498px;
-  }
-  .link {
-    font-size: 21px;
-    font-weight: 900;
   }
   .visually__hidden_f {
     display: none;
@@ -96,10 +81,5 @@
   }
   .hero__main__pic_text p {
     width: 680px;
-  }
-  .link {
-    font-size: 24px;
-    font-weight: 900;
-    margin: 0 auto;
   }
 }

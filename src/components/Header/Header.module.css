@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #24315e;
+  box-shadow: 0 5px 30px 2px #172554;
+  z-index: 2;
+  padding: 0 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  a {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #f7e9a0;
+  }
+  .active {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 0 133px;
+  }
+}

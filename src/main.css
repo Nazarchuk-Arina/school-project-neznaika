@@ -11,13 +11,13 @@
 }
 
 button,
+a,
 input,
 optgroup,
 select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
   margin: 0;
 }
 
@@ -84,9 +84,6 @@ body {
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-  background-image: url("./assets//images/stars-tel.png");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 h1 {
@@ -103,10 +100,8 @@ h2 {
   font-family: "Unbounded";
   font-weight: 800;
   font-size: 24px;
-  line-height: 650%;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  text-align: center;
   color: #f98787;
 }
 
@@ -114,20 +109,22 @@ h3 {
   font-family: "Unbounded";
   font-weight: 800;
   font-size: 16px;
-  line-height: 975%;
   letter-spacing: 0.11em;
   text-transform: uppercase;
   text-align: center;
   color: #f7e9a0;
 }
 
+a,
+button,
 p {
   font-family: "Montserrat";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.07em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   color: #d9d9d9;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,28 +135,31 @@ p {
 
   h1 {
     font-size: 48px;
-    line-height: 325%;
     letter-spacing: 0.04em;
+    font-weight: 800;
   }
 
   h2 {
     font-size: 40px;
-    line-height: 390%;
     letter-spacing: 0.04em;
+    text-align: left;
   }
 
   h3 {
     font-weight: 500;
     font-size: 32px;
-    line-height: 387%;
     letter-spacing: 0.06em;
   }
 
-  p {
+  /* p {
     font-size: 20px;
-    line-height: 120%;
     letter-spacing: -0.05em;
     text-align: justify;
+  } */
+  a,
+  button,
+  p {
+    font-size: 16px;
   }
 }
 
@@ -171,18 +171,16 @@ p {
 
   h1 {
     font-size: 59px;
-    line-height: 261%;
     letter-spacing: 0.03em;
   }
 
   h2 {
     font-size: 41px;
-    line-height: 376%;
   }
 
-  p {
+  /* p {
     line-height: 120%;
-  }
+  } */
 }
 
 .visually-hidden {
