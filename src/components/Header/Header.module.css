@@ -26,14 +26,29 @@
   }
 }
 
+img {
+  width: 178px;
+  height: 23px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 0 30px;
+  }
+
+  img {
+    width: 273px;
+    height: 39px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header {
     padding: 0 133px;
+  }
+
+  img {
+    width: 326px;
+    height: 43px;
   }
 }

@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 import clsx from "clsx";
+import logoTel from "../../assets/images/logo/logo-tel-min.png";
+import logoTab from "../../assets/images/logo/logo-tab-min.png";
+import logoDesc from "../../assets/images/logo/logo-desc-min.png";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(s.link, isActive && s.active);
@@ -12,7 +15,14 @@ const Header = () => {
       <header className={s.header}>
         <nav className={s.nav}>
           <NavLink className={buildLinkClass} to="/">
-            logo
+            <div>
+              <img
+                src={logoTel}
+                srcSet={`${logoTel} 360w, ${logoTab} 768w, ${logoDesc} 1280w`}
+                sizes="(max-width: 360px) 100vw, (max-width: 768px) 50vw, (min-width: 1280px) 33vw"
+                alt="logo of our book"
+              />
+            </div>
           </NavLink>
           <div>
             <NavLink className={buildLinkClass} to="/heroes">
