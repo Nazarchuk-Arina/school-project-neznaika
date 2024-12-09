@@ -29,6 +29,7 @@ const App = () => {
         <Route path="/read" element={<Read />} />
 
         <Route path="/read/:readId" element={<ReadDetails />} />
+        <Route path="/read/:readId" element={<ReadChapter />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
