@@ -4,7 +4,7 @@ import StarryBackground from "../../components/StarryBackground/StarryBackground
 import read from "../../assets/data/read.json";
 import s from "./Read.module.css";
 import clsx from "clsx";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 
 const Read = () => {
