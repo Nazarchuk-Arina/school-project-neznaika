@@ -24,7 +24,7 @@ const Header = () => {
               />
             </div>
           </NavLink>
-          <div>
+          <div className={s.navlinks}>
             <NavLink className={buildLinkClass} to="/heroes">
               Герои
             </NavLink>
@@ -41,3 +41,5 @@ const Header = () => {
   );
 };
 export default Header;
+
+// "", "", "", "";
