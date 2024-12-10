@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { useLocation } from "react-router";
+// import { useLocation } from "react-router";
 import s from "./ChapterButtons.module.css";
 
 const ChapterButtons = ({ readData }) => {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <section>
