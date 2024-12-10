@@ -3,6 +3,7 @@
 
 .read__inner {
   background-color: #d9d9d9;
+  box-shadow: 0 5px 30px 3px #232f58;
 }
 
 .read__inner h1 {

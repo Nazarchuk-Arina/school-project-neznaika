@@ -39,8 +39,8 @@ const Read = () => {
           >
             Далее
           </button>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,10 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "../components/Header/Header";
 import Heroes from "../pages/Heroes/Heroes";
 import Read from "../pages/Read/Read.jsx";
 import NotFound from "../pages/NotFound/NotFound";
 import Home from "../pages/Home/Home.jsx";
-import ReadDetails from "../pages/ReadDetails/ReadDetails.jsx";
 import ReadChapter from "../components/ReadChapter/ReadChapter.jsx";
 
 const App = () => {
@@ -15,7 +13,6 @@ const App = () => {
         <Route path="/heroes" element={<Heroes />} />
         <Route path="/read" element={<Read />} />
 
-        {/* <Route path="/read/:readId" element={<ReadDetails />} /> */}
         <Route path="/read/:readId" element={<ReadChapter />} />
 
         <Route path="*" element={<NotFound />} />
