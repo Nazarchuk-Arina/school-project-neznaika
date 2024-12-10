@@ -1,18 +1,21 @@
 import s from "./ReadChapter.module.css";
 import read from "../../assets/data/read.json";
 import { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import clsx from "clsx";
 
 const ReadChapter = () => {
   const { readId } = useParams();
-  const navigate = useNavigate();
   const [chapter, setChapter] = useState(null);
 
   useEffect(() => {
     const chapterData = read.find((item) => item.id === Number(readId));
     setChapter(chapterData || null);
   }, [readId]);
+
+  if (!chapter) {
+    return <h3>Глава не найдена</h3>;
+  }
 
   const goToPreviousChapter = () => {
     if (Number(readId) > 1) {
