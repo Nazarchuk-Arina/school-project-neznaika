@@ -1,12 +1,13 @@
 import s from "./ReadChapter.module.css";
 import read from "../../assets/data/read.json";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import clsx from "clsx";
 
 const ReadChapter = () => {
   const { readId } = useParams();
   const [chapter, setChapter] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const chapterData = read.find((item) => item.id === Number(readId));

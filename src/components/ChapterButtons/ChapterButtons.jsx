@@ -7,7 +7,9 @@ const ChapterButtons = ({ readData }) => {
       <ul className={s.list}>
         {readData.map(({ id }) => (
           <li key={id} className={s.item}>
-            <NavLink to={`/read/${id}`}>{id}</NavLink>
+            <NavLink to={`/read/${id}`} className={s.btn}>
+              {id}
+            </NavLink>
           </li>
         ))}
       </ul>

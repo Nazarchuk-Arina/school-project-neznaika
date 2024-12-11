@@ -5,22 +5,23 @@
   margin-bottom: 30px;
 }
 
-.item {
+.btn {
+  color: #24315e;
   border: 2px solid #24315e;
+  padding: 2px;
   border-radius: 7px;
-  width: 34px;
-  height: 29px;
+  width: 40px;
+  height: 39px;
   font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 900;
+  font-size: 14px;
   line-height: 240%;
   letter-spacing: 0.05em;
   text-align: center;
-  color: #24315e;
 }
 
-.item:hover,
-.item:focus {
+.btn:hover,
+.btn:focus {
   border: 2px solid #f98787;
   color: #f98787;
 }
@@ -31,7 +32,7 @@
     margin-bottom: 47px;
   }
 
-  .item {
+  .btn {
     border: 3px solid #24315e;
     border-radius: 15px;
     width: 60px;
@@ -40,8 +41,8 @@
     line-height: 120%;
     letter-spacing: 0.03em;
   }
-  .item:hover,
-  .item:focus {
+  .btn:hover,
+  .btn:focus {
     border: 3px solid #f98787;
   }
 }
@@ -52,7 +53,7 @@
     margin-bottom: 40px;
   }
 
-  .item {
+  .btn {
     border: 4px solid #24315e;
     border-radius: 15px;
     width: 87px;
@@ -61,8 +62,8 @@
     line-height: 100%;
     letter-spacing: 0.02em;
   }
-  .item:hover,
-  .item:focus {
+  .btn:hover,
+  .btn:focus {
     border: 4px solid #f98787;
   }
 }
