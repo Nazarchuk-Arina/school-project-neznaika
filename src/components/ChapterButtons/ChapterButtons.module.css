@@ -1,19 +1,20 @@
 .list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px 5px;
   margin-bottom: 30px;
 }
 
 .btn {
   color: #24315e;
-  border: 2px solid #24315e;
+  border: 3px solid #24315e;
   padding: 2px;
-  border-radius: 7px;
+  border-radius: 8px;
   width: 40px;
   height: 39px;
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 1200;
   font-size: 14px;
   line-height: 240%;
   letter-spacing: 0.05em;
@@ -22,7 +23,7 @@
 
 .btn:hover,
 .btn:focus {
-  border: 2px solid #f98787;
+  border: 3px solid #f98787;
   color: #f98787;
 }
 
@@ -33,17 +34,18 @@
   }
 
   .btn {
-    border: 3px solid #24315e;
+    border: 4px solid #24315e;
     border-radius: 15px;
     width: 60px;
     height: 51px;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 120%;
     letter-spacing: 0.03em;
+    padding-top: 8px;
   }
   .btn:hover,
   .btn:focus {
-    border: 3px solid #f98787;
+    border: 4px solid #f98787;
   }
 }
 
@@ -58,9 +60,10 @@
     border-radius: 15px;
     width: 87px;
     height: 66px;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 100%;
     letter-spacing: 0.02em;
+    padding-top: 14px;
   }
   .btn:hover,
   .btn:focus {

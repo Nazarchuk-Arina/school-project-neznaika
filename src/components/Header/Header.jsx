@@ -1,57 +1,79 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 import logoTel from "../../assets/images/logo/logo-tel-min.png";
 import logoTab from "../../assets/images/logo/logo-tab-min.png";
 import logoDesc from "../../assets/images/logo/logo-desc-min.png";
+
+{
+  /* <NavLink to="/" className={styles.title}>
+  <img
+    src={logoTel}
+    srcSet={`${logoTel} 360w, ${logoTab} 768w, ${logoDesc} 1280w`}
+    sizes="(max-width: 360px) 100vw, (max-width: 768px) 50vw, (min-width: 1280px) 33vw"
+    alt="logo of our book"
+  />
+</NavLink>; */
+}
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    document.body.classList.toggle("lock", !menuOpen);
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
-    document.body.classList.remove("lock");
   };
 
   return (
     <header className={s.header}>
-      <nav className={s.nav}>
-        <Link to="/" className={s.title}>
+      <div className={s.logo}>
+        <NavLink to="/" className={s.title}>
           <img
             src={logoTel}
             srcSet={`${logoTel} 360w, ${logoTab} 768w, ${logoDesc} 1280w`}
             sizes="(max-width: 360px) 100vw, (max-width: 768px) 50vw, (min-width: 1280px) 33vw"
             alt="logo of our book"
           />
-        </Link>
-
-        <div
-          className={`${s.menuIcon} ${menuOpen ? s.active : ""}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul className={`${s.menuList} ${menuOpen ? s.open : ""}`}>
-          <li>
-            <NavLink to="/heroes" onClick={closeMenu}>
+        </NavLink>
+      </div>
+      <button className={s.burger} onClick={toggleMenu}>
+        {menuOpen ? "✕" : "☰"}
+      </button>
+      <nav className={`${s.nav} ${menuOpen ? s.navOpen : ""}`}>
+        <ul className={s.navList}>
+          <li className={s.navItem}>
+            <NavLink
+              to="/heroes"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive ? `${s.navLink} ${s.activeLink}` : s.navLink
+              }
+            >
               Герои
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/read" onClick={closeMenu}>
+          <li className={s.navItem}>
+            <NavLink
+              to="/read"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive ? `${s.navLink} ${s.activeLink}` : s.navLink
+              }
+            >
               Читать
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/play" onClick={closeMenu}>
+          <li className={s.navItem}>
+            <NavLink
+              to="/play"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive ? `${s.navLink} ${s.activeLink}` : s.navLink
+              }
+            >
               Играть
             </NavLink>
           </li>

@@ -1,124 +1,76 @@
 .header {
-  width: 100%;
-  padding: 20px;
-  background: #24315e;
-  box-shadow: 0 5px 30px 2px #172554;
-}
-
-body.lock {
-  overflow: hidden;
-}
-
-.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
+  background-color: #24315e;
+  box-shadow: 0 5px 30px 2px #172554;
 }
 
-.title {
-  width: 178px;
-  height: 23px;
-  position: static;
-  z-index: 99;
+.logo {
 }
 
-.menuIcon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 11;
-}
-
-.menuIcon span {
-  background-color: #d9d9d9;
-  height: 3px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.menuIcon.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
-}
-
-.menuIcon.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.menuIcon.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
-}
-
-.menuList {
+.nav {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
-  position: fixed;
-  top: 0;
+  gap: 45px;
+  background-color: #24315e;
+  position: absolute;
+  top: 64px;
   right: 0;
   width: 100%;
-  height: 100vh;
-  background: #24315e;
-  overflow: hidden;
-  z-index: 10;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-  background-image: url("../../assets//images/logo/burger-back.png");
+  height: 100%;
+  padding: 16px 0;
+  z-index: 9999999;
 }
 
-.menuList.open {
+.navOpen {
   display: flex;
-  transform: translateX(0);
 }
 
-.menuList a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #f7e9a0;
-  position: relative;
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 
-.menuList a:hover {
-  color: #a8d1e7;
+.navLink {
+  text-decoration: none;
+  color: #ffeb3b;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .menuIcon {
-    display: none;
-  }
+.navLink:hover {
+  color: #ffffff;
+}
 
-  .menuList {
+.activeLink {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.burger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 15;
+}
+
+@media (min-width: 768px) {
+  .nav {
     display: flex;
     flex-direction: row;
     position: static;
-    background-color: transparent;
-    height: auto;
-    transform: translateX(0);
+    width: auto;
     padding: 0;
+    gap: 24px;
   }
 
-  .menuList a {
-    font-size: 18px;
-  }
-  .title,
-  img {
-    width: 273px;
-    height: 39px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .title,
-  img {
-    width: 326px;
-    height: 43px;
+  .burger {
+    display: none;
   }
 }

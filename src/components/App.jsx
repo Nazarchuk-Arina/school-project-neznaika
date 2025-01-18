@@ -5,10 +5,12 @@ import NotFound from "../pages/NotFound/NotFound";
 import Home from "../pages/Home/Home.jsx";
 import ReadChapter from "../components/ReadChapter/ReadChapter.jsx";
 import Play from "../pages/Play/Play.jsx";
+import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton.jsx";
 
 const App = () => {
   return (
     <div>
+      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/heroes" element={<Heroes />} />
